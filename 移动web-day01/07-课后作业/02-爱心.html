@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汹涌澎湃的爱意</title>
+    <style>
+        .nav {
+            position: relative;
+            height: 400px;
+            width: 400px;
+            margin: 100px auto;
+            /* background-color: #f70; */
+            transition: all 2s;
+        }
+
+        .top {
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .top::before {
+            position: absolute;
+            transform: translate(75px, 50px);
+            content: '';
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .top::after {
+            position: absolute;
+            transform: translate(200px, 50px);
+            content: '';
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .middle {
+            position: relative;
+            height: 1 00px;
+            width: 400px;
+        }
+
+        .middle::before {
+            position: absolute;
+            transform: translate(76px,-30px);
+            content: '';
+            height: 100px;
+            width: 150px;
+            background-color: red;
+            border-radius: 100px 100px 0 100px;
+        }
+
+        .middle::after {
+            position: absolute;
+            transform: translate(190px,-30px);
+            content: '';
+            height: 100px;
+            width: 150px;
+            background-color: red;
+            border-radius: 130px 100px 100px 0;
+        }
+
+        .bottom {
+            position: relative;
+            /* background-color: #f70; */
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+        
+        }
+        .bottom::after {
+            content: '';
+            position: absolute;
+            transform: translate(43px,23px);
+            width: 0;
+            height: 0;
+            border: 170px solid transparent;
+            border-radius: 163px;
+            border-top-color: red;
+           
+        }
+        .nav:hover {
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="top"></div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+
+</html>

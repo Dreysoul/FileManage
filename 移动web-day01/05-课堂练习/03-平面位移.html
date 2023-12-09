@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color:pink;
+
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: #f70;
+            transition: all 2s;
+        }
+        .box:hover .son {
+            /* transform 使其改变 */
+            /* translate 使其发生位移 */
+            /* 参数 第一个使x轴水平方向,第二个则是y轴竖直方向 */
+            /* 如果只有一个数值的时候则是单独代表x轴 */
+            /* 当参数为百分比的时候,其发生移动的位置是根据其自身大小来计算的 */
+
+            transform: translate(500px,100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

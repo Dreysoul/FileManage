@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="box">
+    <h2>dangqianjishu:{{counter}}</h2>
+    <button v-on:clink="add">+</button>
+    <button v-on:clink="sub">-</button>
+</div>
+<script src="js/vue(1).js"></script>
+<script>
+    const ojb={
+        counter:0,
+        message:'abca'
+    }
+    const box = new Vue({
+el:'.box',
+        data:ojb,
+        methods:{
+    add:function (){
+        console.log('')
+        this.counter++
+    },
+    sub:function (){
+        console.log('')
+        this.counter--
+    }
+        }
+    })
+</script>
+</body>
+</html>

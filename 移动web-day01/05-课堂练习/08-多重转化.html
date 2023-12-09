@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1800px;
+            height: 300px;
+            border: 3px solid #000;
+
+        }
+        img {
+            transition: all 6s;
+        }
+        .box:hover img {
+            /* 多个变换属性要同时生效时,写作一行,中间用空格隔开 */
+            /* 如果旋转和位移同时存在时,注意需要先写位移属性在旋转 */
+            /* 补充:如果先旋转在位移,元素的xy轴就会跟着旋转方向变换,导致过程很难看 */
+            transform:translate(800px) rotate(2160deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./images/tyre1.png" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐变</title>
+    <style>
+        div {
+            float: left;
+        }
+        .box1 {
+            width: 600px;
+            height: 600px;
+            /* 默认渐变方向 从上到下 */
+            background-image: linear-gradient(skyblue,#000);
+            /* to 方位名词 改变渐变方向 */
+            background-image: linear-gradient(to top right, red,skyblue);
+            /*linear-gradient可以多个颜色,也可以加角度  */
+            background-image: linear-gradient(170deg,red,blue,#f70,green,skyblue,#000,#fff);
+        }
+        .box2 {
+            width: 400px;
+            height: 400px;
+        }
+        .box2::after {
+            float: left;
+            content: '';
+            width: 400px;
+            height: 400px;
+            background-image: linear-gradient( transparent,rgb(0, 0, 0,.6));
+            display: none;
+        }
+        .box2:hover::after {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

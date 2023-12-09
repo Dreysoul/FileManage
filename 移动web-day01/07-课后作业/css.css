@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+
+.registry {
+    height: 522px;
+    margin-top: 20px;
+    color: #666666;
+    font-size: 20px;
+    border: 1px solid #ccc
+}
+
+.registry h3 {
+    position: relative;
+    height: 42px;
+    background-color: #ececec;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 42px;
+    padding: 0 10px;
+}
+
+.registry .reg {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 14px;
+
+}
+
+.registry .reg a {
+    text-decoration: none;
+    color: #ca155d;
+}
+
+ul {
+    width: 600px;
+    margin: 100px auto;
+}
+
+.registry ul li {
+    width: 600px;
+    margin-bottom: 20px;
+
+}
+
+.registry ul li .nav {
+    float: left;
+    transform: translate(0, 60%);
+    text-align: right;
+    width: 88px;
+    font-size: 12px;
+
+}
+
+.registry ul li input {
+    width: 242px;
+    height: 37px;
+    color: #fff;
+    outline: none;
+    padding-left: 10px;
+}
+
+.registry ul li .fail {
+    font-size: 12px;
+    color: #c81523;
+    margin-left: 20px;
+}
+
+.registry ul li .success {
+    color: #008000;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.registry ul li:nth-child(4) {
+    padding-left: 170px;
+    height: 16px;
+
+}
+.registry ul li:nth-child(4) .nav {
+    transform: translate(0);
+}
+
+em {
+    font-style: normal;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    padding:0 12px;
+    width: 36px;
+    margin-left: 10px;
+}
+
+.registry ul li .ruo {
+    float: left;
+    background-color: #de1111;
+}
+.registry ul li .zhong {
+    float: left;
+    background-color: #40b83f;
+}
+.registry ul li .qiang {
+    float: left;
+    background-color: #f79100;
+}
+.registry ul li:nth-child(6) {
+    padding-left: 95px;
+    font-size: 12px;
+}
+.registry ul li:nth-child(6) input {
+    width: 13px;
+    height: 13px;
+}
+.registry ul li input a {
+    color: #1ab1e6;
+}
+.registry ul li:last-child input {
+    width: 200px;
+    height: 34px;
+    margin: 30px 0 0 70px;
+    background-color: #c81623;
+    padding: 0;
+}
