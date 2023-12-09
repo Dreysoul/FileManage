@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西游记</title>
+    <style>
+        .box {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            margin: 100px auto;
+        }
+
+        .monkey {
+            position: absolute;
+            top: -70px;
+            left: 50px;
+            width: 200px;
+            height: 180px;
+            background-image: url(./images/大师兄.png);
+            animation: move 1s steps(8) infinite;
+        }
+
+        .second_Brother {
+            position: absolute;
+            top: 100px;
+            left: 30px;
+            width: 200px;
+            height: 180px;
+            background-image: url(./images/二师兄.png);
+            animation: move 1s steps(8) infinite;
+        }
+
+        .master {
+            float: left;
+            width: 170px;
+            height: 240px;
+            background-image: url(./images/师傅.png);
+            animation: move_master 1s steps(8) infinite;
+        }
+
+        .Brother_Sha {
+            float: left;
+            width: 200px;
+            height: 180px;
+            background-image: url(./images/三师弟.png);
+            animation: move_Brother_Sha 1s steps(8) infinite;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+
+        @keyframes move_master {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -1360px 0;
+            }
+        }
+
+        @keyframes move_Brother_Sha {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -1680px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=box>
+        <div class="monkey"></div>
+        <div class="second_Brother"></div>
+        <div class="master"></div>
+        <div class="Brother_Sha"></div>
+    </div>
+</body>
+
+</html>

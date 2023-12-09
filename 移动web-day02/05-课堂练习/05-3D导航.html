@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D导航</title>
+    <style>
+        body {
+            perspective: 800px;
+        }
+        ul {
+            width: 600px;
+            height: 100px;
+            margin: 100px auto;
+        }
+        li {
+            list-style: none;
+            position: relative;
+            float: left;
+            width: 200px;
+            height: 100px;
+            transform-style: preserve-3d;
+            transition: all 1s;
+            
+        }
+        li>div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100px;
+            font-size: 40px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .son1 {
+            background-color: #f70;
+            transform: translateY(-50px) rotateX(90deg);
+        }
+        .son2 {
+            background-color: green;
+            transform: translateZ(50px);
+        }
+        li:hover {
+            transform: rotateX(-90deg) ;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="son1">index</div>
+            <div class="son2">首页</div>
+        </li>
+        <li>
+            <div class="son1">index</div>
+            <div class="son2">首页</div>
+        </li><li>
+            <div class="son1">index</div>
+            <div class="son2">首页</div>
+        </li>
+    </ul>
+</body>
+</html>

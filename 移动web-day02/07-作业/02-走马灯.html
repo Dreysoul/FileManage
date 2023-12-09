@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>走马灯</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 1440px;
+            height: 270px;
+            border: 8px solid #000;
+            margin: 100px auto;
+            overflow: hidden;
+
+
+        }
+
+        ul {
+            width: 4800px;
+            height: 270px;
+            margin: 0 auto;
+            background-color: #000;
+            animation: move 20s linear infinite;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            width: 480px;
+            height: 270px;
+
+
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-3360px, 0);
+            }
+        }
+
+        ul li:first-child {
+            background-image: url(./images/1.jpg);
+        }
+
+        ul li:nth-child(2) {
+            background-image: url(./images/2.jpg);
+        }
+
+        ul li:nth-child(3) {
+            background-image: url(./images/3.jpg);
+        }
+
+        ul li:nth-child(4) {
+            background-image: url(./images/4.jpg);
+        }
+
+        ul li:nth-child(5) {
+            background-image: url(./images/5.jpg);
+        }
+
+        ul li:nth-child(6) {
+            background-image: url(./images/6.jpg);
+        }
+
+        ul li:nth-child(7) {
+            background-image: url(./images/7.jpg);
+        }
+
+        ul li:nth-child(8) {
+            background-image: url(./images/1.jpg);
+        }
+
+        ul li:nth-child(9) {
+            background-image: url(./images/2.jpg);
+        }
+
+        ul li:last-child {
+            background-image: url(./images/3.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

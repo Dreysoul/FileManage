@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            /* flex */
+            display: flex;
+            /* 改变flex主轴方向  */
+            /* 默认 row 从左到右 */
+            /* row-reverse 从右到左 */
+            /* 纵向 colum 从上到下 */
+            /* 纵向 column-reverse 从下到上 */
+            flex-direction: column;
+            /* 改变主轴方向后，对于弹性容器来说主轴和侧轴方向改变 */
+            /* 原本的主轴方向，现在称之为侧轴 */
+            /* 原本的侧轴方向，现在称之为主轴 */
+            /* justify-content 主轴方向对齐方式 */
+            /* align-items 侧轴方向对齐方式 */
+            justify-content: space-evenly;
+            align-items: center;
+            /* 正常使用主轴/侧轴对齐方式代码即可 */
+        }
+
+        .pic {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .box p {
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 图片 -->
+        <div class="pic"></div>
+        <!-- 内容 -->
+        <p>测试文本</p>
+    </div>
+</body>
+
+</html>

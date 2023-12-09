@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul {
+            display: flex;
+            /* 允许弹性盒子进行换行 */
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 800px;
+            height: 800px;
+            background-color: pink;
+
+            /* 需求：让第一行贴顶部，第二行贴底部 */
+            /* 因为换行后，多了一个 行与行之间对齐方式的概念！ */
+            /* align-content: 控制行与行的对齐方式，与jc的属性值一致 */
+            /* align-content: space-between; */
+            /* align-content: space-evenly; */
+            /* 可以使用se，但是尽量不使用，大部分浏览器不兼容 */
+            /* IE11不支持 */
+            /* ie一共才出了11个版本 */
+
+            align-content: stretch;
+            /* 会拉伸每个弹性盒子所占的空间,不给宽度就拉满,给了宽度就增加空白区域 */
+            /* 改变行与行之间的对齐方式不为默认值即可 */
+            /* align-content: flex-start; */
+
+
+        }
+
+        li {
+            width: 180px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

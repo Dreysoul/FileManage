@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box {
+            width: 800px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 100px auto;
+        }
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* 调用动画animation */
+            /* 参数1 动画名称 */
+            /* 参数2 动画完成一个周期所花费的时间 */
+            /* 参数3 运动曲线 默认"ease" 慢-快-慢  可选:匀速linear */
+            /* 参数4 延迟执行动画的时间  */
+            /* 参数5 动画被执行的次数,可以是数字 列1 2 3 可选:infinite(无限次) */
+            /* 参数6 桂东动画是否在下一周期逆播放 ---动画的播放次数>=2,才有下一周期 */
+            /* 参数7 控制动画的状态 暂停paused 运行running */
+            /* 参数8 规定动画执行完成后的状态 1.保持结束状态  2.回到起始转态 */
+            animation:move 2s linear 2s infinite alternate forwards;
+
+            /* 动画的复合属性:没有一定的顺序要求 */
+            /* 注意:有两个时间参数时 前者时完成该动画的时候,后者是延迟时间 */
+
+        }
+        
+        /* 鼠标经过 box 让 son 暂停 */
+        .box:hover .son {
+            animation-play-state: paused;
+        }
+
+        /* 动画 */
+        /* keyframes关键帧 +动画名称(自定义) */
+        @keyframes move {
+            0% {
+                transform: translate(0,0);
+            }
+            25% {
+                transform: translate(700px,0);
+            }
+            50% {
+                transform: translate(700px,400px);
+            }
+            75% {
+                transform: translate(0,400px);
+            }
+            100% {
+                transform: translate(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空间变换</title>
+    <style>
+        body {
+            /* 无法直观看到z轴的变化,因为浏览器属于平面,所以需要我们添加一个元素去代替眼睛观察z轴的变换 */
+            perspective: 800px;
+        }
+
+        div {
+            float: left;
+            height: 100px;
+            width: 100px;
+            transition: all 1s;
+            margin: 100px;
+        }
+
+        .box1 {
+            background: pink;
+        }
+
+        .box1:hover {
+            /* x轴移动 */
+            transform: translateX(100px);
+        }
+
+        .box2 {
+            background: skyblue;
+        }
+
+        .box2:hover {
+            /* y轴移动 */
+            transform: translateY(100px);
+        }
+
+        .box3 {
+            background: #f70;
+        }
+
+        .box3:hover {
+            /* z轴移动 */
+            transform: translateZ(100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

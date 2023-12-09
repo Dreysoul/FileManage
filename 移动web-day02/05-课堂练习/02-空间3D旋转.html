@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空间旋转</title>
+    <style>
+        body {
+            /* 无法直观看到z轴的变化,因为浏览器属于平面,所以需要我们添加一个元素去代替眼睛观察z轴的变换 */
+            perspective: 800px;
+        }
+
+        div {
+            float: left;
+            height: 200px;
+            width: 200px;
+            transition: all 1s;
+            margin: 100px;
+        }
+        .box1 {
+            background: pink;
+        }
+        .box2 {
+            background: skyblue;
+        }
+        .box3 {
+            background: #f70;
+        }
+        /* 空间3D旋转使用左手法则,即握拳大拇指指向轴的正方向,然后手指弯曲的方向为元素旋转方向 */
+        .box1:hover {
+            /* x轴旋转 */
+            transform: rotateX(90deg);
+        }
+
+        .box2:hover {
+             /* 轴旋转 */
+             transform: rotateY(89deg);
+        }
+
+        .box3:hover {
+             /* z轴旋转 */
+             transform: rotateZ(69deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易始终</title>
+    <style>
+        .box {
+            position: relative;
+            width: 414px;
+            height: 414px;
+            background-image: url(./时钟.png);
+            margin: 100px auto;
+        }
+        .box::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-8px,-14px);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #f70;
+            z-index: 99;
+        }
+        .miao {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-top: 20px;
+            margin-left: -0.5px;
+            width: 1px;
+            height: 180px;
+            background-color: #000;
+            border-radius: 50% 50% 0 0;
+            transform-origin: bottom;
+            animation: time 1s infinite steps(60);
+            box-shadow: 10px 20px 20px #000;
+            
+        }
+        .fen {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-top: 100px;
+            margin-left: -2px;
+            width: 4px;
+            height: 100px;
+            background-color: #000;
+            border-radius: 50% 50% 0 0;
+            transform-origin: bottom;
+            animation: time 60s infinite linear;
+            box-shadow: 10px 20px 20px #000;
+
+        }
+        .shi {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-top: 130px;
+            margin-left: -4px;
+            width: 8px;
+            height: 70px;
+            background-color: #000;
+            border-radius: 50% 50% 0 0;
+            transform-origin: bottom;
+            animation: time 720s infinite linear;
+            box-shadow: 10px 20px 20px #000;
+
+        }
+        
+        @keyframes time {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* .box:hover .miao {
+            transform: rotate(360deg);
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="miao"></div>
+        <div class="fen"></div>
+        <div class="shi"></div>
+    </div>
+</body>
+</html>
