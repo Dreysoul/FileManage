@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注意点</title>
+    <style>
+        .box {
+            /* 给父元素添加flex  */
+            display: flex;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+        /* 1. 块级元素作为弹性盒子(子元素),没有设置宽度时,宽度自适应由实际内容撑开 */
+        .div {
+            height: 100px;
+            background-color: red;
+        }
+        /* 2. 当行内元素作为弹性盒子(子元素) 可以直接设置宽高(有大小) */
+        .span {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        /* 3. 当行内元素作为弹性容器(父元素)  可以直接设置宽高 */
+        .span_box {
+            display: flex;
+            width: 200px;
+            height: 100px;
+            background-color: #f70;
+        }
+    </style>
+</head>
+<body>
+    <!-- 弹性容器 -->
+    <div class="box">
+        <!-- 弹性盒子 块级 -->
+        <div class="div">块级元素</div>
+        <!-- 弹性盒子 行内 -->
+        <div class="span">行内元素</div>
+    </div>
+
+    <!-- 直接给行内元素天机flex 作为弹性容器来使用 -->
+    <div class="span_box"></div>
+</body>
+</html>

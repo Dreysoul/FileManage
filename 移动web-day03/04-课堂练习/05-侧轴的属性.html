@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 给父元素添加flex属性 */
+            display: flex;
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            /* 1. 默认值,弹性盒子沿着主轴先拉伸至铺满容器,当子元素没有高度的时候,会拉满整个父元素的高  */
+            align-items: stretch;
+            /* 2. flex-start 默认从起点开始依次排列 */
+            align-items: flex-start;
+            /* 3. flex-end终点开始依次排列 */
+            align-items: flex-end;
+            /* 4. 沿侧轴居中排列  配合justify-content: center;可以做到绝对父容器居中  */
+            align-items: center;
+
+            justify-content: center;
+        }
+
+        .box>div {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .son1 {
+            background-color: rgb(34, 255, 0);
+        }
+
+        .son2 {
+            background-color: rgb(38, 0, 255);
+        }
+
+        .son3 {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <div class="son3"></div>
+    </div>
+</body>
+
+</html>

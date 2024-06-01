@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>确认订单</title>
+    <!-- 1. 引入字体图标样式表 -->
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+    <!-- 2. 引入基础类样式表 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 3. 引入当前页面的样式表 - 确保放在最后 -->
+    <link rel="stylesheet" href="./css/orders.css">
+</head>
+
+<body>
+
+    <!-- 项目规范：-->
+    <!-- 1. 尽量使用flex完成所有布局效果 -->
+    <!-- 2. 合理搭配使用内外边距进行布局 -->
+    <!-- 3. 严格注意类名规范和代码结构 -->
+    <!-- 4. 开始之前先熟悉项目提供的各类文件（图标素材，图片素材等） -->
+    <!-- 5. 请尽量书写代码注释 -->
+    <!-- 6. 有图片尽量使用多倍图方案 -->
+    <!-- 7. 注意底部模块，不能遮挡主体内容显示 -->
+    <!-- 8. 按照尽量抽离公共样式，复用代码 -->
+
+    <!-- 主体内容  开始  -->
+
+    <!-- 头部通知栏 -->
+    <header>
+        <img src="./images/header.png">
+    </header>
+    <div class="main">
+        <!-- 用户信息 -->
+        <div class="users_info">
+            <div class="position iconfont icon-location"></div>
+            <div class="p_info">
+                <div class="practice">
+                    <h3>
+                        林丽
+                    </h3>
+                    <p>18586655532</p>
+                </div>
+                <span>北京市 海淀区 中关村软件园 信息科技大厦1号楼410#</span>
+            </div>
+            <div class="more iconfont icon-more"></div>
+        </div>
+        <!-- 商品信息 goods_info -->
+        <div class="goods_info">
+            <div class="goods_img">
+                <img src="./uploads/pic.png">
+            </div>
+            <div class="details">
+                <div class="word">
+                    <em>康尔贝 非接触式红外体温仪</em>
+                    <i>领券立减30元 婴儿级材质 测温…</i>
+                    <span>粉色 红外体温计</span>
+                    <div class="price">
+                        <em>￥</em>
+                        <span>266</span>
+                        <del>
+                            <em>￥</em>
+                            <span>266</span>
+                        </del>
+                    </div>
+                </div>
+                <div class="goods_number">
+                    <span>3</span>
+                </div>
+            </div>
+        </div>
+        <!-- 表单 form -->
+        <!-- 快递 express -->
+        <div class="form">
+            <div class="sheet">
+                <div class="sheet_left">配送方式</div>
+                <div class="sheet_right">顺丰快递</div>
+            </div>
+            <div class="sheet beizhu">
+                <div class="sheet_left">买家备注</div>
+                <span>
+                    希望可以尽快发货,谢谢~
+                </span>
+                <div class="sheet_right"></div>
+            </div>
+            <div class="sheet">
+                <div class="sheet_left">支付方式</div>
+                <div class="sheet_right">支付宝 &gt;</div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="sheet">
+                <div class="sheet_left">商品总价</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>299.00</span>
+                </div>
+            </div>
+            <div class="sheet ">
+                <div class="sheet_left">运费</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="sheet">
+                <div class="sheet_left">折扣</div>
+                <div class="sheet_right price">
+                    <i>-</i>
+                    <em>￥</em>
+                    <span>30.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="sheet">
+                <div class="sheet_left">商品总价</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>299.00</span>
+                </div>
+            </div>
+            <div class="sheet ">
+                <div class="sheet_left">运费</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="sheet">
+                <div class="sheet_left">折扣</div>
+                <div class="sheet_right price">
+                    <i>-</i>
+                    <em>￥</em>
+                    <span>30.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="sheet">
+                <div class="sheet_left">商品总价</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>299.00</span>
+                </div>
+            </div>
+            <div class="sheet ">
+                <div class="sheet_left">运费</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="sheet">
+                <div class="sheet_left">折扣</div>
+                <div class="sheet_right price">
+                    <i>-</i>
+                    <em>￥</em>
+                    <span>30.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="sheet">
+                <div class="sheet_left">商品总价</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>299.00</span>
+                </div>
+            </div>
+            <div class="sheet ">
+                <div class="sheet_left">运费</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="sheet">
+                <div class="sheet_left">折扣</div>
+                <div class="sheet_right price">
+                    <i>-</i>
+                    <em>￥</em>
+                    <span>30.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="sheet">
+                <div class="sheet_left">商品总价</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>299.00</span>
+                </div>
+            </div>
+            <div class="sheet ">
+                <div class="sheet_left">运费</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="sheet">
+                <div class="sheet_left">折扣</div>
+                <div class="sheet_right price">
+                    <i>-</i>
+                    <em>￥</em>
+                    <span>30.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="sheet">
+                <div class="sheet_left">商品总价</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>299.00</span>
+                </div>
+            </div>
+            <div class="sheet ">
+                <div class="sheet_left">运费</div>
+                <div class="sheet_right">
+                    <em>￥</em>
+                    <span>0.00</span>
+                </div>
+            </div>
+            <div class="sheet">
+                <div class="sheet_left">折扣</div>
+                <div class="sheet_right price">
+                    <i>-</i>
+                    <em>￥</em>
+                    <span>30.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="null"></div>
+    <!-- 底部  footer -->
+    <footer>
+        
+            <div class="pay_left">
+                <div class="heji">
+                    合计：
+                </div>
+                <div class="price">
+                    <i>￥</i>
+                    <span>266</span>
+                    <em>.00</em>
+                </div>
+            </div>
+            <div class="pay_right">
+                <a href="#">去支付</a>
+            </div>
+    </footer>
+</body>
+
+</html>

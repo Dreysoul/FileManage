@@ -1,0 +1,243 @@
+body {
+    background-color: #f7f7f8;
+}
+
+/* <!-- 头部通知栏 --> */
+header {
+    position: fixed;
+    top: 0;
+    height: 40px;
+}
+
+header img {
+    width: 100%;
+}
+
+/* 整体页面缩进 */
+.main {
+    padding: 12px 11px 0;
+}
+
+/* <!-- 用户信息 --> */
+.users_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 8px;
+    padding-left: 11px;
+}
+
+.users_info .position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #54b196;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.users_info .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.users_info .p_info {
+    flex: 1;
+    padding-left: 10px;
+
+
+}
+
+.users_info .p_info .practice {
+    display: flex;
+    align-items: center;
+}
+
+.users_info .p_info h3 {
+    flex: 3;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.users_info .p_info p {
+    flex: 7;
+    font-size: 13px;
+}
+
+.users_info .p_info span {
+    display: block;
+    line-height: 1.5;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* <!-- 商品信息 goods_info --> */
+.goods_info {
+    display: flex;
+    align-items: center;
+    height: 107px;
+    background-color: #fff;
+    margin-top: 11px;
+    padding: 0 11px;
+    font-size: 16px;
+}
+
+.goods_info .goods_img {
+    width: 85px;
+    height: 85px;
+}
+
+.goods_info .goods_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.goods_info .details {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 90px;
+    font-size: 16px;
+}
+
+.goods_info .details .word {
+    flex: 14;
+    padding-left: 14px;
+}
+
+.goods_info .details .word>em {
+    display: flex;
+    font-size: 13px;
+}
+
+.goods_info .details .word i {
+    display: flex;
+    font-size: 13px;
+}
+
+.goods_info .details .word>span {
+    background-color: #f7f7f8;
+    color: #888888;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.goods_info .details .word .price {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+.goods_info .details .word .price>em,
+.goods_info .details .word .price>span {
+    color: #d84444;
+}
+
+.goods_info .details .word .price del {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 14px;
+}
+
+.goods_info .details .goods_number {
+    display: flex;
+    flex: 2;
+    height: 90px;
+}
+
+.goods_info .details .goods_number::before {
+    content: '\e7ce';
+    font-family: 'iconfont' !important;
+    color: #333333;
+}
+
+/* 表单 form */
+/* <!-- 快递 express --> */
+.form {
+    height: 125px;
+    background-color: #fff;
+    margin-top: 6px;
+    padding: 0 14px;
+    font-size: 13px;
+    color: #262626;
+    overflow: hidden;
+}
+
+.form .sheet {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+.form .beizhu {
+    display: flex;
+    justify-content: start;
+}
+.form .sheet>span {
+    font: 12px;
+    color: #989898;
+    margin-left: 20px;
+}
+.form .sheet .price {
+    color: #cf4444;
+}
+
+/* 底部 footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+footer .pay_left {
+    display: flex;
+    justify-content: space-between;
+}
+footer .pay_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    background-color: #54b196;
+    border-radius: 10px;
+}
+footer .pay_left .heji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .pay_left .price {
+    color: #cf4444;
+}
+footer .pay_left .price i {
+    margin-left: 12px;
+    font-size: 12px;
+}
+footer .pay_left .price span {
+    font-size: 20px;
+}
+footer .pay_left .price em {
+    font-size: 18px;
+}
+footer .pay_right a {
+    color: #fff;
+    /* align-self: center; */
+}
+.null {
+    width: 100%;
+    height: 90px;
+}

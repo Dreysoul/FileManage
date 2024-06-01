@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百分比案列</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        footer {
+            /* 通常百分比布局会搭配 */
+            min-width: none;
+            max-width: none;
+            position: fixed;
+            bottom: 0;
+            /* w100px */
+            width: 100%;
+
+        }
+        footer ul li {
+            /* 五份20% */
+            float: left;
+            width: 20%;
+        }
+        footer ul li img {
+            /* 图片也要自适应缩放 */
+            width: 100%;
+            /* 相对于父容器100% 父容器变化的时候跟着变 */
+        }
+
+    </style>
+</head>
+<body>
+    <footer>
+        <ul>
+            <li><img src="../01-案例/02-京东/images/car.png"></li>
+            <li><img src="../01-案例/02-京东/images/classify.png"></li>
+            <li><img src="../01-案例/02-京东/images/index.png"></li>
+            <li><img src="../01-案例/02-京东/images/jd.png"></li>
+            <li><img src="../01-案例/02-京东/images/login.png"></li>
+        </ul>
+    </footer>
+</body>
+</html>
