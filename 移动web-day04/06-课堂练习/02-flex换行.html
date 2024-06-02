@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex换行</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        ul {
+            width: 800px;
+            height: 600px;
+            background-color: pink;
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-between;
+            /* 多个弹性盒子宽度超过父容器时,不会自动换行 */
+            /* 可以利用fw 设置允许换行 wrap*/
+            flex-wrap: wrap;
+            /* 换行之后就多了个行与行之间的对齐方式 */
+            align-content: space-between;
+            align-content: space-around;
+            /* 兼容性问题  所以少考虑evenly */
+        }
+        li {
+            /* 控制它的缩小比例为0(不缩小) */
+            /* flex-shrink: 0; */
+            width: 170px;
+            height: 200px;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+</html>

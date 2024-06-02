@@ -1,0 +1,415 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.user .user_HD .embership_Code .erweima img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #000;
+    background-image: url(../images/33.png);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-size: cover;
+}
+
+/* personal_Center */
+.personal_Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 50px;
+    background-color: #000;
+    font-size: 34px;
+    color: #fff;
+}
+
+/* 用户 */
+.user {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .9);
+    padding: 15px 15px 0;
+    color: #fff;
+    border-radius: 0 0 100% 100%/0 0 15% 15%;
+
+}
+
+.user .user_HD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.user .user_HD .user_pic {
+    width: 43px;
+    height: 43px;
+    background-image: url(../images/头像.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.user .user_HD .embership_Code {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    font-size: 12px;
+}
+
+.user .user_HD .embership_Code .erweima {
+    width: 26px;
+    height: 26px;
+}
+
+.user .user_HD .user_info {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.user .user_HD .user_info p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.user .user_HD .user_info p:last-child {
+    font-size: 12px;
+    color: #d4b77b;
+}
+
+.user ul {
+    display: flex;
+    justify-content: space-around;
+    height: 48px;
+    margin-top: 5px;
+}
+
+.user ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 48px;
+    width: 95px;
+    background-color: #303030;
+    border-radius: 2px;
+}
+
+.user ul li span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user ul li em,
+.user ul li i {
+    font-size: 12px;
+}
+
+.user .vip {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    background-color: #f76734;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -3px;
+}
+
+.vip .vip_icon {
+    width: 19px;
+    height: 16px;
+    background-image: url(../images/会员.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.user .vip .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 23px;
+    background-color: #262626;
+    border-radius: 13px;
+    font-size: 12px;
+}
+
+.user .vip i {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.user .vip em {
+    font-size: 12px;
+}
+
+/* 主体 */
+.main {
+    padding: 0 15px 60px;
+}
+
+/* 我的订单 */
+.my_order {
+    height: 105px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.my_order .order_HD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 18px;
+}
+
+.my_order .order_HD h2 {
+    font-size: 18px;
+}
+
+.my_order .order_HD>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #808080;
+}
+
+.my_order .order_HD>div i {
+    height: 9px;
+    width: 9px;
+    background-color: #f33b3b;
+    border-radius: 50%;
+    margin: 0 7px;
+}
+
+.my_order .order_HD>div::after {
+    content: '\e628';
+    font-family: "iconfont" !important;
+    font-size: 16px;
+}
+
+.my_order ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my_order ul li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    font-size: 12px;
+}
+
+.my_order ul li>div {
+    width: 23px;
+    height: 21px;
+}
+
+.my_order ul li:nth-child(3)>div {
+    width: 26px;
+    height: 20px;
+}
+
+.my_order ul li:nth-child(4)>div {
+    width: 25px;
+    height: 21px;
+}
+
+.my_order ul li:last-child>div {
+    width: 18px;
+    height: 21px;
+}
+
+.my_order ul li>div img {
+    width: 100%;
+    height: 100%;
+}
+
+/* <!-- 推荐 recommend --> */
+.recommend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-top: 10px;
+    padding: 0 8px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.recommend .publicity_Pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../images/鲜美鲜货.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.recommend .fruit1,
+.recommend .fruit2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.recommend .fruit1 {
+    width: 64px;
+    height: 44px;
+    background-image: url(../images/猕猴桃.png);
+
+}
+
+.recommend .fruit2 {
+    width: 67px;
+    height: 45px;
+    background-image: url(../images/苹果.png);
+}
+
+.recommend .publicity_Info p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.recommend .publicity_Info em {
+    font-size: 13px;
+    color: #f8676f;
+}
+.recommend .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    background-color: #eaeaea;
+    border-radius: 50% ;
+    color: red;
+}
+.recommend .more::after {
+    content: '\e628';
+    font-family: "iconfont" !important;
+}
+
+/* <!-- 常用功能区 Common_Functions --> */
+.Common_Functions {
+    height: 180px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.Common_Functions .title {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding-left: 18px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Common_Functions ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 125px;
+}
+
+.Common_Functions ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 55px;
+    font-size: 12px;
+}
+
+.Common_Functions ul li>div {
+    width: 36px;
+    height: 36px;
+
+}
+
+.Common_Functions ul li>div img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* <!-- 底部 footer --> */
+
+footer ul {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    font-size: 12px;
+    background-color: #fff;
+    color: #808080;
+}
+
+footer ul li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul li>div {
+    width: 18px;
+    height: 27px;
+    font-size: 18px;
+}
+
+footer ul li .shouye_icon::before {
+    content: '\e64f';
+    font-family: "iconfont" !important;
+}
+
+footer ul li .fenlei_icon::before {
+    content: '\e62f';
+    font-family: "iconfont" !important;
+}
+
+footer ul li .miaoshajia_icon::before {
+    content: '\e69e';
+    font-family: "iconfont" !important;
+}
+
+footer ul li .gouwuche_icon::before {
+    content: '\e600';
+    font-family: "iconfont" !important;
+}
+
+footer ul li .wode_icon::before {
+    content: '\e601';
+    font-family: "iconfont" !important;
+
+}
+footer ul li:last-child {
+    color: red;
+}

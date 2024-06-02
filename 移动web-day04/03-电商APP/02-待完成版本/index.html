@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 完整的移动端视口处理方案 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1 minimum-scale=1 maximum-scale=1 user-scalable=no" />
+    <title>APP</title>
+    <!-- 引入字体图标样式 -->
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <!-- 引入基础类样式 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 引入自己的css样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- 注意: -->
+    <!-- 1.参考01-完整版的尺寸和结构完成代码 -->
+    <!-- 2.提前检查提供的图片素材和字体图标等 -->
+    <!-- 3.尽量使用flex布局方式完成页面 -->
+    <!-- 4.合理的使用允许换行和更换flex主轴操作进行布局 -->
+    <!-- 5.注意类名和结构规范 -->
+    <!-- 6.在移动设备iPhone6/7/8 375px下完成调试 -->
+
+    <!-- 内容补充 -->
+
+    <!-- 头部通知栏 -->
+    <header></header>
+
+    <!-- 个人中心 personal_Center -->
+    <div class="personal_Center">
+        个人中心
+    </div>
+    <div class="user">
+        <div class="user_HD">
+            <div class="user_pic">
+            </div>
+            <div class="user_info">
+                <p>
+                    172****8909
+                </p>
+                <p>
+                    最幸福的事就是雨天能为你撑起小伞
+                </p>
+            </div>
+            <div class="embership_Code">
+                <div class="erweima">
+                    <img src="./images/二维码.png">
+                </div>
+                <i>会员码</i>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div><em>￥</em><span>100</span>
+                </div>
+                <i>钱包余额</i>
+            </li>
+            <li>
+                <span>2</span>
+                <i>礼品卡</i>
+            </li>
+            <li>
+                <span>4</span>
+                <i>优惠券</i>
+            </li>
+        </ul>
+        <div class="vip">
+            <div class="vip_icon"></div>
+            <i>超级会员</i>
+            <em>会员超级权益，即将开启</em>
+            <div class="btn">等待开启</div>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <div class="main">
+        <!-- 我的订单 my_order-->
+        <div class="my_order">
+            <div class="order_HD">
+                <h2>我的订单</h2>
+                <div>
+                    <span>查看所有订单</span>
+                    <i></i>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        <img src="./images/待付款.png">
+                    </div>
+                    <span>
+                        待付款
+                    </span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/待配送.png">
+                    </div>
+                    <span>
+                        待配送
+                    </span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/配送中.png">
+                    </div>
+                    <span>
+                        配送中
+                    </span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/待评价.png">
+                    </div>
+                    <span>
+                        待评价
+                    </span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/售后服务.png">
+                    </div>
+                    <span>
+                        售后服务
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!-- 推荐 recommend -->
+        <div class="recommend">
+            <div class="publicity_Pic"></div>
+            <div class="publicity_Info">
+                <p>一品生鲜货</p>
+                <em>好吃好玩嗨天购</em>
+            </div>
+            <div class="fruit1"></div>
+            <div class="fruit2"></div>
+            <div class="more"></div>
+        </div>
+        <!-- 常用功能区 Common_Functions -->
+        <div class="Common_Functions">
+            <div class="title">常用功能</div>
+            <ul>
+                <li>
+                    <div class="c-icon">
+                        <img src="./images/1.png">
+                    </div>
+                    <span>常用地址</span>
+
+                </li>
+                <li>
+                    <div class="c-icon">
+                        <img src="./images/2.png">
+                    </div>
+                    <span>领券中心</span>
+                </li>
+                <li>
+                    <div class="c-icon">
+                        <img src="./images/3.png">
+                    </div>
+                    <span>低价拼团</span>
+                </li>
+                <li>
+                    <div class="c-icon">
+                        <img src="./images/4.png">
+                    </div>
+                    <span>我的签到</span>
+                </li>
+                <li>
+                    <div class="c-icon">
+                        <img src="./images/5.png">
+                    </div>
+                    <span>推荐分享</span>
+                </li>
+                <li>
+                    <div class="c-icon">
+                        <img src="./images/6.png">
+                    </div>
+                    <span>积分商城</span>
+                </li>
+                <li>
+                    <div class="c-icon">
+                        <img src="./images/7.png">
+                    </div>
+                    <span>发票中心</span>
+                </li>
+                <li>
+                    <div class="c-icon">
+                        <img src="./images/8.png">
+                    </div>
+                    <span>APP更新</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 底部 footer -->
+    <footer>
+        <ul>
+            <li>
+                <div class="shouye_icon"></div>
+                <span>首页</span>
+            </li>
+            <li>
+                <div class="fenlei_icon"></div>
+                <span>分类</span>
+            </li>
+            <li>
+                <div class="miaoshajia_icon"></div>
+                <span>秒杀价</span>
+            </li>
+            <li>
+                <div class="gouwuche_icon"></div>
+                <span>购物车</span>
+            </li>
+            <li>
+                <div class="wode_icon"></div>
+                <span>我的</span>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

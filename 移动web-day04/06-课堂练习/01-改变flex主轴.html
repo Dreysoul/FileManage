@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改变flex主轴</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }       
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            display: flex;
+            /* 1. row 默认主轴方向,从左到右 */
+            flex-direction: row;
+            /* 2. reverse 逆方向 更改主轴方向,变为从右到左  */
+            flex-direction: row-reverse;
+            /* 3. column 更改主轴的方向为从上到下,为列 */
+            flex-direction: column;
+            /* 4. column-reverse 更改主轴的方向为从下到上(不常用) */
+            /* flex-direction: column-reverse; */
+            justify-content: space-around;
+            align-items: center;
+        }
+        .pic {
+            width: 100px;
+            height: 110px;
+            background-color: #f70;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <!-- 弹性容器 -->
+    <div class="box">
+        <div class="pic"></div>
+        <p>测试文本</p>
+    </div>
+</body>
+</html>
